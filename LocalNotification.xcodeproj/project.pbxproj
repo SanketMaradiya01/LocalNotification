@@ -14,6 +14,7 @@
 		CC0B42302B7E0723004DC129 /* LocalNotification.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC0B422E2B7E0723004DC129 /* LocalNotification.xcdatamodeld */; };
 		CC0B42322B7E0725004DC129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC0B42312B7E0725004DC129 /* Assets.xcassets */; };
 		CC0B42352B7E0725004DC129 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC0B42332B7E0725004DC129 /* LaunchScreen.storyboard */; };
+		CC0B423E2B7E076C004DC129 /* ReminderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0B423D2B7E076C004DC129 /* ReminderVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CC0B42312B7E0725004DC129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0B42342B7E0725004DC129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC0B42362B7E0725004DC129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC0B423D2B7E076C004DC129 /* ReminderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		CC0B42242B7E0723004DC129 /* LocalNotification */ = {
 			isa = PBXGroup;
 			children = (
+				CC0B423C2B7E0744004DC129 /* Controllers */,
 				CC0B42252B7E0723004DC129 /* AppDelegate.swift */,
 				CC0B42272B7E0723004DC129 /* SceneDelegate.swift */,
-				CC0B42292B7E0723004DC129 /* ViewController.swift */,
 				CC0B422B2B7E0723004DC129 /* Main.storyboard */,
 				CC0B42312B7E0725004DC129 /* Assets.xcassets */,
 				CC0B42332B7E0725004DC129 /* LaunchScreen.storyboard */,
@@ -68,6 +70,15 @@
 				CC0B422E2B7E0723004DC129 /* LocalNotification.xcdatamodeld */,
 			);
 			path = LocalNotification;
+			sourceTree = "<group>";
+		};
+		CC0B423C2B7E0744004DC129 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CC0B42292B7E0723004DC129 /* ViewController.swift */,
+				CC0B423D2B7E076C004DC129 /* ReminderVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 				CC0B42302B7E0723004DC129 /* LocalNotification.xcdatamodeld in Sources */,
 				CC0B422A2B7E0723004DC129 /* ViewController.swift in Sources */,
 				CC0B42262B7E0723004DC129 /* AppDelegate.swift in Sources */,
+				CC0B423E2B7E076C004DC129 /* ReminderVC.swift in Sources */,
 				CC0B42282B7E0723004DC129 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +310,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +338,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

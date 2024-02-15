@@ -9,11 +9,23 @@ import UIKit
 import CoreData
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+                    // Handle authorization result
+                    if granted {
+                        print("Notification authorization granted")
+                    } else {
+                        print("Notification authorization denied")
+                    }
+                }
+
+                // Set the UNUserNotificationCenter delegate
+                UNUserNotificationCenter.current().delegate = self
+        
         // Override point for customization after application launch.
         return true
     }
